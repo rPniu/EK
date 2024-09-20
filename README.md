@@ -1,6 +1,11 @@
 # EK
 使用
 
+使用前安装库依赖库：qrcode
+~~~
+pip install qrcode
+~~~
+
 主文件：QRcode.py
 自定义函数：timeDan.py
 
