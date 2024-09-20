@@ -10,6 +10,9 @@ pip install qrcode
 自定义函数：timeDan.py
 
 运行QRcode.py
+~~~
+python QRcode.py
+~~~
 
 模式一：根据当前时间生成时间戳
 模式二：根据指定时间生成时间戳
