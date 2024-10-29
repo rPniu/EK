@@ -7,6 +7,7 @@ pip install qrcode
 ~~~
 
 主文件：QRcode.py
+
 自定义函数：timeDan.py
 
 运行QRcode.py
