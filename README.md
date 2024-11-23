@@ -1,25 +1,46 @@
-# EK-py
+## EK-GO-fyne
 
-## 环境
-测试环境：Python 3.12
+### 环境
 
-## 使用
+测试环境：
 
-使用前安装库依赖库：qrcode
-~~~
-pip install qrcode
-~~~
+go version go1.23.2 windows/amd64
 
-主文件：QRcode.py
+fyne：fyne.io/fyne/v2 v2.5.2
 
-自定义函数：timeDan.py
+### 使用
 
-运行QRcode.py
-~~~
-python QRcode.py
-~~~
+源码+打包exe文件
 
-模式一：根据当前时间生成时间戳
-模式二：根据指定时间生成时间戳
+-   可直接食用exe文件
+-   其他平台自行打包
 
-读不懂请大佬查看源代码或者使用AI询问，原理简单，本人菜狗自己写
+使用`go mod tidy` 会自动下载缺失的依赖库
+
+```
+go mod tity
+```
+
+打包
+
+icon为图标，可省略
+
+```
+fyne package -os darwin -icon myapp.png
+fyne package -os linux -icon myapp.png
+fyne package -os windows -icon myapp.png
+fyne package -os android -appID com.example.myapp -icon mobileIcon.png
+fyne package -os ios -appID com.example.myapp -icon mobileIcon.png
+```
+
+安装
+
+```
+android:
+adb install myapp.apk
+
+IOS:
+xcrun simctl install booted myapp.app
+```
+
+大菜鸡第一次做，希望大佬多有包含。谢谢体谅
