@@ -1,4 +1,4 @@
-## EK-GO-fyne
+## EK-GO-fyne停用
 
 ### 环境
 
